@@ -1,0 +1,336 @@
+/* OPTEM · Elegant Institutional Premium (Estudiante, Docente y Administrador).
+   Las preferencias visuales se obtienen de la cuenta activa. */
+.optem-student-premium {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-background-color: -student-backdrop;
+}
+.optem-student-premium .student-premium-page {
+    -fx-background-color: linear-gradient(to bottom right,
+        -student-backdrop 0%, derive(-student-backdrop, -2%) 70%,
+        derive(-student-accent-soft, 3%) 100%);
+}
+.optem-student-premium.student-dark .student-premium-page {
+    -fx-background-color: linear-gradient(to bottom right,
+        -student-backdrop, derive(-student-backdrop, 8%));
+}
+.optem-student-premium .student-premium-heading { -fx-font-weight: 800; }
+.optem-student-premium .student-premium-card {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+.optem-student-premium .student-premium-section {
+    -fx-background-color: linear-gradient(to bottom right, -student-surface, -student-surface-alt);
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-border-color: -student-border;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(22, 46, 72, .14), 13, 0, 0, 4);
+}
+.optem-student-premium.student-dark .student-premium-section {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, .27), 15, 0, 0, 4);
+}
+.optem-student-premium .student-premium-well {
+    -fx-background-color: -student-surface;
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-color: -student-border;
+    -fx-border-width: 1;
+    -fx-padding: 18;
+}
+.optem-student-premium .student-premium-button,
+.optem-student-premium .student-premium-input {
+    -fx-background-radius: 11;
+    -fx-border-radius: 11;
+}
+.optem-student-premium .student-premium-button:focused,
+.optem-student-premium .student-premium-input:focused {
+    -fx-focus-color: -student-accent;
+    -fx-faint-focus-color: transparent;
+}
+.optem-student-premium .student-premium-input:focused {
+    -fx-border-color: -student-accent;
+    -fx-border-width: 1.5;
+}
+.optem-student-premium .student-premium-button:disabled { -fx-opacity: .57; }
+.optem-student-premium .scroll-pane > .viewport { -fx-background-color: transparent; }
+.optem-student-premium .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.optem-student-premium .scroll-bar .thumb {
+    -fx-background-color: derive(-student-accent, 33%);
+    -fx-background-radius: 10;
+}
+.optem-student-premium .optem-sidebar {
+    -fx-background-color: linear-gradient(to bottom right, -student-surface, -student-surface-alt);
+    -fx-border-color: -student-border;
+    -fx-border-width: 0 1 0 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(21, 47, 69, .13), 14, 0, 3, 0);
+}
+.optem-student-premium .optem-menu-selected {
+    -fx-background-color: linear-gradient(to bottom right,
+        derive(-student-accent, 23%), -student-accent 46%, -student-accent-deep);
+    -fx-text-fill: white;
+    -fx-background-radius: 13;
+    -fx-effect: dropshadow(three-pass-box, rgba(12, 45, 53, .26), 10, 0, 0, 3);
+}
+.optem-student-premium .student-premium-dialog,
+.optem-student-premium.student-premium-dialog {
+    -fx-background-color: linear-gradient(to bottom right, -student-surface, -student-surface-alt);
+    -fx-border-color: -student-border;
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+    -fx-padding: 12;
+}
+.optem-student-premium .student-premium-dialog .header-panel,
+.optem-student-premium.student-premium-dialog > .header-panel {
+    -fx-background-color: linear-gradient(to right, -student-accent-soft, -student-surface-alt);
+    -fx-background-radius: 12;
+}
+.optem-student-premium .student-premium-dialog .label,
+.optem-student-premium.student-premium-dialog .label { -fx-text-fill: -student-text; }
+.optem-student-premium.student-premium-dialog .button-bar .button {
+    -fx-background-color: linear-gradient(to bottom right,
+        derive(-student-accent,15%), -student-accent, -student-accent-deep);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+.optem-student-premium.student-premium-dialog .text-field {
+    -fx-background-color: -student-surface;
+    -fx-text-fill: -student-text;
+    -fx-border-color: -student-border;
+    -fx-background-radius: 11;
+    -fx-border-radius: 11;
+}
+/* Semantic warning/error colors and colored notes are intentionally not overridden. */
+
+/* Revisión de notas, entregas y avisos flotantes sin tocar su información. */
+.optem-student-premium .student-premium-chat {
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: -student-border;
+    -fx-border-width: 1;
+}
+.optem-student-premium.optem-v6-modal-root {
+    -fx-border-color: -student-border;
+    -fx-border-radius: 17;
+    -fx-background-radius: 17;
+}
+.optem-student-premium .progress-bar .bar {
+    -fx-background-color: linear-gradient(to right,
+        derive(-student-accent, 18%), -student-accent, -student-accent-deep);
+    -fx-background-radius: 9;
+}
+.optem-student-premium .progress-bar .track {
+    -fx-background-color: -student-accent-soft;
+    -fx-background-radius: 9;
+}
+.optem-student-premium .table-row-cell:filled:selected,
+.optem-student-premium .list-cell:filled:selected {
+    -fx-background-color: -student-accent-soft;
+    -fx-text-fill: -student-text;
+}
+.optem-student-premium .combo-box:focused,
+.optem-student-premium .date-picker:focused,
+.optem-student-premium .spinner:focused {
+    -fx-focus-color: -student-accent;
+    -fx-faint-focus-color: transparent;
+}
+.optem-student-premium .context-menu {
+    -fx-background-color: -student-surface;
+    -fx-border-color: -student-border;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(18,40,63,.18), 12,0,0,4);
+}
+.optem-student-premium .context-menu .menu-item:focused {
+    -fx-background-color: -student-accent-soft;
+}
+.optem-student-premium .context-menu .label {
+    -fx-text-fill: -student-text;
+}
+
+/* PERFIL DOCENTE — extensión del MISMO sistema premium de Estudiante.
+   Se activa solo cuando el rol de la sesión es MAESTRO; tonos desde Ajustes. */
+.optem-student-premium.teacher-premium .student-premium-page {
+    -fx-background-color: linear-gradient(to bottom right,
+        -student-backdrop 0%, derive(-student-backdrop, -2%) 65%,
+        -student-accent-soft 100%);
+}
+.optem-student-premium.teacher-premium.student-dark .student-premium-page {
+    -fx-background-color: linear-gradient(to bottom right,
+        -student-backdrop 0%, derive(-student-backdrop, 9%) 100%);
+}
+.optem-student-premium.teacher-premium .student-premium-card {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+.optem-student-premium.teacher-premium .student-premium-input {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+.optem-student-premium.teacher-premium .student-premium-button {
+    -fx-background-radius: 11;
+    -fx-border-radius: 11;
+}
+.optem-student-premium.teacher-premium .student-premium-button:focused,
+.optem-student-premium.teacher-premium .student-premium-input:focused {
+    -fx-focus-color: -student-accent;
+    -fx-faint-focus-color: transparent;
+}
+.optem-student-premium.teacher-premium .progress-bar .bar {
+    -fx-background-color: linear-gradient(to right,
+        derive(-student-accent, 18%), -student-accent, -student-accent-deep);
+    -fx-background-radius: 8;
+}
+.optem-student-premium.teacher-premium .student-premium-dialog,
+.optem-student-premium.teacher-premium.student-premium-dialog {
+    -fx-background-color: linear-gradient(to bottom right,
+        -student-surface, -student-surface-alt);
+    -fx-border-color: -student-border;
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+.optem-student-premium.teacher-premium .table-row-cell:filled:selected,
+.optem-student-premium.teacher-premium .list-cell:filled:selected {
+    -fx-background-color: -student-accent-soft;
+    -fx-text-fill: -student-text;
+}
+
+
+/* ADMINISTRADOR: MISMO Elegant Institutional Premium que Estudiante y Docente.
+   Se usa exclusivamente bajo .admin-premium. El color lo proveen Preferences. */
+.optem-student-premium.admin-premium .student-premium-page {
+    -fx-background-color: linear-gradient(to bottom right,
+        -student-backdrop 0%, derive(-student-backdrop, -1%) 55%,
+        -student-accent-soft 100%);
+}
+.optem-student-premium.admin-premium.student-dark .student-premium-page {
+    -fx-background-color: linear-gradient(to bottom right,
+        -student-backdrop 0%, derive(-student-backdrop, 8%) 100%);
+}
+.optem-student-premium.admin-premium .admin-premium-header {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+.optem-student-premium.admin-premium .admin-premium-panel,
+.optem-student-premium.admin-premium .admin-premium-row {
+    -fx-border-width: 1;
+}
+.optem-student-premium.admin-premium .admin-premium-primary:focused,
+.optem-student-premium.admin-premium .admin-premium-secondary:focused,
+.optem-student-premium.admin-premium .admin-premium-field:focused {
+    -fx-focus-color: -student-accent;
+    -fx-faint-focus-color: transparent;
+}
+.optem-student-premium.admin-premium .admin-premium-field,
+.optem-student-premium.admin-premium .admin-premium-form .text-field,
+.optem-student-premium.admin-premium .admin-premium-form .combo-box {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+.optem-student-premium.admin-premium .admin-premium-form .text-field:focused,
+.optem-student-premium.admin-premium .admin-premium-form .combo-box:focused {
+    -fx-border-color: -student-accent;
+    -fx-focus-color: -student-accent;
+    -fx-faint-focus-color: transparent;
+}
+.optem-student-premium.admin-premium .chart,
+.optem-student-premium.admin-premium .chart-plot-background {
+    -fx-background-color: transparent;
+}
+.optem-student-premium.admin-premium .chart-vertical-grid-lines,
+.optem-student-premium.admin-premium .chart-horizontal-grid-lines {
+    -fx-stroke: -student-border;
+    -fx-stroke-width: .7;
+}
+.optem-student-premium.admin-premium .chart-series-line {
+    -fx-stroke: -student-accent-deep;
+    -fx-stroke-width: 2.4px;
+}
+.optem-student-premium.admin-premium .chart-line-symbol {
+    -fx-background-color: -student-accent-deep, -student-surface;
+    -fx-background-radius: 6;
+    -fx-padding: 4;
+}
+.optem-student-premium.admin-premium .axis,
+.optem-student-premium.admin-premium .axis-label {
+    -fx-tick-label-fill: -student-muted;
+}
+.optem-student-premium.admin-premium .combo-box-popup .list-view,
+.optem-student-premium.admin-premium .context-menu {
+    -fx-background-color: -student-surface;
+    -fx-border-color: -student-border;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+.optem-student-premium.admin-premium .combo-box-popup .list-cell:filled:hover,
+.optem-student-premium.admin-premium .combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: -student-accent-soft;
+    -fx-text-fill: -student-text;
+}
+.optem-student-premium.admin-premium.student-premium-dialog .dialog-pane,
+.optem-student-premium.admin-premium.student-premium-dialog {
+    -fx-background-color: linear-gradient(to bottom right, -student-surface, -student-surface-alt);
+    -fx-border-color: -student-border;
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+.optem-student-premium.admin-premium .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* V6.5: contraste real para controles, popups y overlays en modo oscuro. */
+.optem-v6.optem-student-premium.student-dark .optem-loading-shade {
+    -fx-background-color: rgba(9, 13, 22, .89);
+}
+.optem-v6.optem-student-premium.student-dark .optem-loading-card {
+    -fx-background-color: linear-gradient(to bottom right, #202735, #171d29);
+    -fx-border-color: -student-accent;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.46),20,0,0,7);
+}
+.optem-v6.optem-student-premium.student-dark .optem-loading-card .label { -fx-text-fill: #F1F5FF; }
+.optem-v6.optem-student-premium.student-dark .optem-loading-card .progress-indicator { -fx-progress-color: -student-accent; }
+.optem-student-premium.student-dark .text-area,
+.optem-student-premium.student-dark .text-area .content,
+.optem-student-premium.student-dark .text-field,
+.optem-student-premium.student-dark .combo-box-base,
+.optem-student-premium.student-dark .spinner,
+.optem-student-premium.student-dark .date-picker,
+.optem-student-premium.student-dark .date-picker .text-field {
+    -fx-control-inner-background: #171C25;
+    -fx-background-color: #171C25;
+    -fx-text-fill: #F1F5FF;
+    -fx-prompt-text-fill: #99A6B8;
+}
+.optem-student-premium.student-dark .combo-box .list-cell,
+.optem-student-premium.student-dark .combo-box .cell,
+.optem-student-premium.student-dark .spinner .text-field,
+.optem-student-premium.student-dark .date-picker .text-field { -fx-text-fill: #F1F5FF; }
+.optem-student-premium.student-dark .label { -fx-text-fill: #F1F5FF; }
+.optem-student-premium.student-dark .combo-box-popup .list-view,
+.optem-student-premium.student-dark .combo-box-popup .list-cell,
+.optem-student-premium.student-dark .list-view,
+.optem-student-premium.student-dark .list-cell {
+    -fx-background-color: #202735;
+    -fx-text-fill: #F1F5FF;
+}
+.optem-student-premium.student-dark .combo-box-popup .list-cell:filled:hover,
+.optem-student-premium.student-dark .combo-box-popup .list-cell:filled:selected,
+.optem-student-premium.student-dark .list-cell:filled:selected {
+    -fx-background-color: -student-accent-soft;
+    -fx-text-fill: #F1F5FF;
+}
+.optem-student-premium.student-dark .date-picker-popup,
+.optem-student-premium.student-dark .date-picker-popup .month-year-pane,
+.optem-student-premium.student-dark .date-picker-popup .calendar-grid,
+.optem-student-premium.student-dark .context-menu { -fx-background-color: #202735; }
+.optem-student-premium.student-dark .date-picker-popup .label,
+.optem-student-premium.student-dark .context-menu .label { -fx-text-fill: #F1F5FF; }
+/* No afectar el modo claro ni los colores semánticos. */
+
+.optem-dark-profile-menu, .optem-dark-profile-menu .menu-item { -fx-background-color: #202735; }
+.optem-dark-profile-menu .menu-item .label { -fx-text-fill: #F1F5FF; }
+.optem-dark-profile-menu .menu-item:focused { -fx-background-color: #53416F; }

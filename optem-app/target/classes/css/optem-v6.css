@@ -1,0 +1,167 @@
+/* OPTEM V6 — verde institucional / profundidad / componentes consistentes */
+.optem-v6 {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-background-color: linear-gradient(to bottom right, #f4f8ff, #eef5f6 54%, #e4efed);
+}
+.optem-v6 .button, .optem-v6 .toggle-button {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-font-weight: 700;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(26, 69, 61, 0.13), 7, 0, 0, 2);
+}
+.optem-v6 .button:hover { -fx-effect: dropshadow(three-pass-box, rgba(10, 80, 67, 0.23), 12, 0, 0, 4); }
+.optem-v6 .button:pressed { -fx-effect: dropshadow(three-pass-box, rgba(16, 39, 48, .08), 3, 0, 0, 1); }
+.optem-v6 .text-field, .optem-v6 .text-area, .optem-v6 .password-field,
+.optem-v6 .combo-box, .optem-v6 .date-picker, .optem-v6 .spinner {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: rgba(51, 108, 97, 0.18);
+    -fx-border-width: 1;
+    -fx-focus-color: #16805e;
+    -fx-faint-focus-color: rgba(22,128,94,0.16);
+}
+.optem-v6 .text-field:focused, .optem-v6 .text-area:focused,
+.optem-v6 .combo-box:focused, .optem-v6 .date-picker:focused {
+    -fx-border-color: #159765; -fx-border-width: 1.6;
+    -fx-effect: dropshadow(three-pass-box, rgba(14,135,94,.15), 9, 0, 0, 1);
+}
+.optem-v6 .scroll-pane { -fx-background-color: transparent; -fx-background: transparent; }
+.optem-v6 .scroll-pane > .viewport { -fx-background-color: transparent; }
+.optem-v6 .scroll-bar:vertical, .optem-v6 .scroll-bar:horizontal { -fx-background-color: transparent; }
+.optem-v6 .scroll-bar .thumb { -fx-background-color: rgba(33, 104, 86, .36); -fx-background-radius: 10; }
+.optem-v6 .scroll-bar .track { -fx-background-color: rgba(155, 186, 180, .1); -fx-background-radius: 12; }
+.optem-v6 .tab-pane .tab-header-area .tab-header-background { -fx-background-color: transparent; }
+.optem-v6 .tab-pane .tab { -fx-background-radius: 12 12 0 0; -fx-background-color: #e8f0ee; }
+.optem-v6 .tab-pane .tab:selected { -fx-background-color: #e3f4e8; -fx-border-color: #1a8f5c; -fx-border-width: 0 0 2 0; }
+.optem-v6 .table-view { -fx-background-radius: 14; -fx-border-color: #d7e6e0; -fx-border-radius: 14; -fx-border-width: 1; }
+.optem-v6 .table-view .column-header-background { -fx-background-color: linear-gradient(to bottom, #f4faf6, #e7f0ed); }
+.optem-v6 .table-row-cell:filled:hover { -fx-background-color: #ecf7f0; }
+.optem-v6 .progress-bar .bar { -fx-background-color: linear-gradient(to right, #27a45f, #0b704d, #0b4061); -fx-background-radius: 9; }
+.optem-v6 .progress-bar .track { -fx-background-color: #dfeae9; -fx-background-radius: 9; }
+.optem-v6 .context-menu { -fx-background-color: #fff; -fx-background-radius: 13; -fx-border-color: #d0e5dc; -fx-border-radius: 13; -fx-effect: dropshadow(three-pass-box, rgba(15,53,48,.19),15,0,0,6); }
+.optem-v6 .menu-item:focused { -fx-background-color: #e0f4e6; }
+.optem-v6 .tooltip { -fx-background-color: #193d34; -fx-text-fill: white; -fx-background-radius: 9; }
+.optem-v6 .optem-v6-panel { -fx-border-radius: 15; }
+/* Cards, background, side navigation and animation overlay. */
+.optem-v6 .optem-hero {
+    -fx-background-color: linear-gradient(to bottom right, #066c25 0%, #00844c 25%, #065c52 54%, #0e274e 100%);
+    -fx-background-radius: 26;
+    -fx-border-color: #d0ebd3, rgba(24, 133, 83, .7);
+    -fx-border-width: 2, 1;
+    -fx-border-insets: 0, 3;
+    -fx-border-radius: 26, 23;
+    -fx-effect: dropshadow(three-pass-box, rgba(12, 70, 54, .32), 20, 0, 0, 8);
+}
+.optem-v6 .optem-feature-card {
+    -fx-background-color: linear-gradient(to bottom, #ffffff 0%, #f2f7fc 65%, #eaf1f2 100%);
+    -fx-background-radius: 23;
+    -fx-border-radius: 23;
+    -fx-border-color: rgba(10,112,66,.6);
+    -fx-border-width: 1.2;
+    -fx-effect: dropshadow(three-pass-box, rgba(20,70,62,.23), 16, 0, 0, 8);
+    -fx-cursor: hand;
+}
+.optem-v6 .optem-feature-card:hover { -fx-effect: dropshadow(three-pass-box, rgba(10,101,70,.35), 20, 0, 0, 9); }
+.optem-v6 .optem-sidebar {
+    -fx-background-color: linear-gradient(to bottom right, #ffffff 0%, #f5f9ff 60%, #e6f0ef 100%);
+    -fx-border-color: #d9e8eb;
+    -fx-border-width: 0 1 0 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(29,61,78,.14), 13, 0, 3, 0);
+}
+.optem-v6 .optem-menu-selected {
+    -fx-background-color: linear-gradient(to bottom right, #16892a, #04674c 58%, #053c62);
+    -fx-background-radius: 13;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(18,104,59,.38), 9, 0, 0, 3);
+}
+.optem-v6 .optem-loading-shade { -fx-background-color: rgba(240, 249, 247, .89); }
+.optem-v6 .optem-loading-card {
+    -fx-background-color: linear-gradient(to bottom right, #ffffff, #ebf6f0);
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: #b2dec4;
+    -fx-padding: 25 34;
+    -fx-effect: dropshadow(three-pass-box, rgba(24,67,63,.24),20,0,0,8);
+}
+.optem-v6 .optem-loading-card .label { -fx-font-size: 16; -fx-font-weight: 800; -fx-text-fill: #174b3c; }
+.optem-v6-dialog { -fx-background-color: linear-gradient(to bottom right, #ffffff, #edf6f1); -fx-border-color: #c0e0cf; -fx-border-width: 1; -fx-background-radius: 18; -fx-border-radius: 18; }
+.optem-v6-dialog > .header-panel { -fx-background-color: linear-gradient(to right, #deeee2, #eaf3fb); }
+.optem-v6-dialog .button { -fx-background-color: linear-gradient(to bottom right, #118749, #065e4f); -fx-text-fill: white; -fx-background-radius: 10; -fx-font-weight: bold; }
+.optem-v6-dialog .content.label { -fx-text-fill: #253c3b; }
+/* Even when dark mode is enabled, keep the selected palette as the user's preference. */
+
+/* Diálogos, modales y mensajes unificados OPTEM V6. */
+.optem-v6-dialog {
+    -fx-background-color: linear-gradient(to bottom right, #ffffff 0%, #f2f8f7 56%, #e9f2f7 100%);
+    -fx-border-color: #b9dacc;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-padding: 12;
+    -fx-font-family: "Segoe UI", Arial;
+    -fx-font-size: 13px;
+}
+.optem-v6-dialog > .header-panel {
+    -fx-background-color: linear-gradient(to right, #e4f4e7 0%, #e7f0f8 100%);
+    -fx-background-radius: 12;
+    -fx-padding: 14 18;
+}
+.optem-v6-dialog > .header-panel .label {
+    -fx-text-fill: #153c38;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.optem-v6-dialog > .content {
+    -fx-padding: 18 16;
+}
+.optem-v6-dialog .button-bar .button {
+    -fx-background-color: linear-gradient(to bottom right, #168e4e, #075e56 70%, #123d65);
+    -fx-background-radius: 10;
+    -fx-padding: 9 22;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(20,72,60,.20), 8,0,0,2);
+}
+.optem-v6-dialog .button-bar .button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #1da65e, #086c61 70%, #174c76);
+}
+.optem-v6-dialog .text-field, .optem-v6-dialog .text-area, .optem-v6-dialog .combo-box {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #b9d7cf;
+    -fx-focus-color: #137e51;
+}
+.optem-v6-alert-icon {
+    -fx-background-color: linear-gradient(to bottom right, #17954c, #075e56);
+    -fx-background-radius: 27;
+    -fx-min-width: 48;
+    -fx-min-height: 48;
+    -fx-alignment: center;
+    -fx-font-size: 23;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.optem-v6-alert-icon.optem-error-icon {
+    -fx-background-color: linear-gradient(to bottom right, #ee5454, #b91c1c);
+}
+.optem-v6-alert-icon.optem-warning-icon {
+    -fx-background-color: linear-gradient(to bottom right, #efb34b, #d27817);
+}
+.optem-v6-modal-root {
+    -fx-border-color: rgba(28,125,80,.28);
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+}
+.optem-v6-modal-root .button {
+    -fx-background-radius: 11;
+    -fx-border-radius: 11;
+    -fx-cursor: hand;
+}
+.optem-v6-modal-root .text-field, .optem-v6-modal-root .text-area,
+.optem-v6-modal-root .scroll-pane, .optem-v6-modal-root .combo-box {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
